@@ -3,7 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
-{
+{   
+    public static PlayerMovement Instance;
+
+    void Awake(){
+        if(Instance == null){
+            Instance = this;
+        }
+    }
+
     public float speed;
     public float rotatingSpeed;
 
