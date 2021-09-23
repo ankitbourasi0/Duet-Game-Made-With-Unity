@@ -22,10 +22,12 @@ public class PlayerMovement : MonoBehaviour
     public float rotatingSpeed; //variable for rotating speed
     Rigidbody2D rb;//variable from this can access unity's RigidBody features of Physics
     Vector3 startPosition;
-
+    Camera cam;
+    float touchPosition;
     // Start is called before the first frame update
     void Start()
     {
+        cam = Camera.main;
         startPosition = transform.position;
         rb = GetComponent<Rigidbody2D>();
         MovePlayerUpward();
@@ -34,6 +36,24 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Mobile Inputs
+        if(!GameManger.Instance.isGameOver){
+              if(Input.GetMouseButtonDown(0))
+                touchPosition = cam.ScreenToWorldPoint(Input.mousePosition).x;
+
+            if(Input.GetMouseButton(0)){
+                if(touchPosition > 0.01f)
+                    // Debug.Log("right ");
+                    RotatingRight();
+                else
+                    // Debug.Log("left");
+                    RotatingLeft();
+            }else
+                rb.angularVelocity = 0f; 
+            
+        }
+
+
         if(Input.GetKey (KeyCode.LeftArrow)){
             RotatingLeft();
         }else if(Input.GetKey (KeyCode.RightArrow)){
@@ -43,6 +63,11 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyUp (KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)){
             rb.angularVelocity = 0f;
         }
+        if(Input.GetMouseButtonDown(0)){
+         
+        }
+      
+
     }
     void MovePlayerUpward(){
         rb.velocity = Vector2.up * speed;//moving player in upward direction
