@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
       
 
     }
-    void MovePlayerUpward(){
+    public void MovePlayerUpward(){
         rb.velocity = Vector2.up * speed;//moving player in upward direction
     }
     void RotatingLeft(){
