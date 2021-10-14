@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {   
@@ -105,4 +106,16 @@ public class PlayerMovement : MonoBehaviour
         MovePlayerUpward();  
         });
     }
+
+     void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("LevelEnd"))
+        {
+            Destroy(other.gameObject);
+            
+        SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex + 1); 
+       
+        }
+    }
+
 }
+
