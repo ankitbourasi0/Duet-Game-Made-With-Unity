@@ -15,6 +15,8 @@ public class CollisionDetectionBalls : MonoBehaviour
         if(other.collider.CompareTag("Obstacles")){
             GameManger.Instance.isGameOver = true;
             explosionFx.Play();
+            Handheld.Vibrate();
+          
             Splatters.Instance.AddSplatter(other.transform, other.contacts[0].point, ballIndex);
         PlayerMovement.Instance.Restart();
         }

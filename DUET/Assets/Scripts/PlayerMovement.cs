@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         //Mobile Inputs
         if(!GameManger.Instance.isGameOver){

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a78163d45a2b39f43b08371fdb839c74
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Jullian
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 168cf6ad5a31d7545867d83c86cc9c99, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

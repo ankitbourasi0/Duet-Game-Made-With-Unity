@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8ea3f0b0e10d2e846ba7c4b7fa897477
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Kalulla
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 01c0d015fde15534bae997a38a83315d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

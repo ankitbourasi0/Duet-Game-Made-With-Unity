@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 26d091d5741136d41a480b6a2745cae9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Kirimaru
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c4ca463f1a0a1be43a10aa2d1ea018db, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
