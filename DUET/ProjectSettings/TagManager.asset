@@ -42,6 +42,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 235623241
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: splatter
+    uniqueID: 2685833287
     locked: 0

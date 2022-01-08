@@ -8,6 +8,9 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject SettingsUI;
 
     [SerializeField] private Button closeButton;
+    [SerializeField] private Button closeButtonCredit;
+
+    [SerializeField] private GameObject CreditUI;
  
     public void GameStart()
     {
@@ -21,6 +24,8 @@ public class Menu : MonoBehaviour
     public void Awake(){
     closeButton.onClick.AddListener(SettingsClose);
     SettingsClose();
+    closeButtonCredit.onClick.AddListener(CreditsClose);
+    CreditsClose();
     }
 
     public void SettingsOpen(){
@@ -34,7 +39,18 @@ public class Menu : MonoBehaviour
     }
      public void OnDestroy(){
 
-    // closeButton.onClick.RemoveListener(SettingsClose);
+     closeButton.onClick.RemoveListener(SettingsClose);
+     closeButtonCredit.onClick.RemoveListener(CreditsClose);
+
+    }
+    public void CreditsOpen(){
+        CreditUI.SetActive(true);
+     
+    }
+    public void CreditsClose()
+    {
+               CreditUI.SetActive(false);
+
     }
 }
 
